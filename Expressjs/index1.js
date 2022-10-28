@@ -15,5 +15,5 @@ app.get('/read-users-details', (req, res) => {
 app.get('/read-users', (req, res) => {
   res.send('List of Users')
 })
-
+//we will have to bring the concept of routers to manage the multiple parts and the multiple routings, bring in the modular approach of routers. see in index2
 app.listen(3000)
