@@ -4,10 +4,16 @@
 //let's bring in the concept of routers
 
 const express = require('express')
+
+//to bring in the routes we've created
+var products = require('./routes/products')
+
 var app = express()
 
-app.get('/', (req, res) => {
-  res.send('hallow')
-})
+app.use('/products', products)
+
+// app.get('/', (req, res) => {
+//   res.send('hallow')
+// })
 
 app.listen(3000)
