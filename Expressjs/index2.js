@@ -5,13 +5,13 @@
 
 const express = require('express')
 
-//to bring in the routes we've created
+//to bring in the routes/modules we've created
 var products = require('./routes/products')
 var users = require('./routes/users')
 var orders = require('./routes/orders')
 
 var app = express()
-
+//to use them
 app.use('/products', products)
 app.use('/users', users)
 app.use('/orders', orders)
