@@ -7,10 +7,12 @@ const express = require('express')
 
 //to bring in the routes we've created
 var products = require('./routes/products')
+var users = require('./routes/users')
 
 var app = express()
 
 app.use('/products', products)
+app.use('/users', users)
 
 // app.get('/', (req, res) => {
 //   res.send('hallow')
