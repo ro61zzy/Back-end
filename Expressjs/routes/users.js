@@ -17,6 +17,16 @@ router.get('/search/:key([0-9]{4})', (req, res) => {
   res.send('Data captured is: ' + req.params.key)
 })
 
+//using middleware
+router.use('/', (req, res, next) => {
+  console.log('API call received')
+  next()
+})
+
+router.get('/', (req, res) => {
+  res.send('List of Users: ')
+})
+
 //wildcard expression, for when value doesn't match
 router.get('*', (req, res) => {
   res.send('URL not found')
