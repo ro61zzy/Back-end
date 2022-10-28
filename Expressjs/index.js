@@ -3,4 +3,4 @@ var app = express()
 app.get('/getUsers', (req, res) => {
   res.send('Welcome to express')
 })
-app.listen(3000)
+app.listen(4000)
