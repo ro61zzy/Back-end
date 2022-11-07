@@ -1,3 +1,4 @@
+//with a function
 var invoices = () => {
   console.log('this is a module for invoices')
 }
