@@ -1,31 +1,19 @@
-import logo from './logo.svg'
 import './App.css'
-import React from 'react'
+import React, { useState } from 'react'
 
-class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = (apiResponse: '')
-  }
-  callAPI() {
-    fetch('http://localhost:9000/testAPI/')
-      .then((res) => res.text())
-      .then((res) => this.setState({ apiResponse: res }))
-  }
-  componentWillMount() {
-    this.callAPI()
-  }
+const App = () => {
+  const [message, setMessage] = useState('')
 
-  render() {
-    return (
-      <div className='App'>
-        <header className='App-header'>
-          <p>Simple app</p>
-        </header>
-        <p>{this.state.apiResponse}</p>
-      </div>
-    )
-  }
+  fetch('http://localhost:9000/testAPI/')
+    .then((res) => res.json())
+    .then((data) => setMessage(data.message))
+
+  return (
+    <>
+      <h1>Here is API:</h1>
+      <p>{message}</p>
+    </>
+  )
 }
 
 export default App
