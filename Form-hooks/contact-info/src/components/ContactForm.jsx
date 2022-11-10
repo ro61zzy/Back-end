@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function ContactForm() {
+function ContactForm({ addContact }) {
   const [contactInfo, setContactInfo] = useState({
     //this are the state properties
     name: '',
@@ -14,7 +14,7 @@ function ContactForm() {
   const handleSubmit = (event) => {
     // prevents the submit button from refreshing the page
     event.preventDefault()
-    console.log(contactInfo)
+    addContact(contactInfo)
     setContactInfo({ name: ' ', email: ' ', phonenumber: ' ' })
   }
 
@@ -30,6 +30,7 @@ function ContactForm() {
             name='name'
             placeholder='Name'
             value={contactInfo.name}
+            onChange={handleChange}
           />
         </div>
         <div>
@@ -38,6 +39,7 @@ function ContactForm() {
             name='email'
             placeholder='Email'
             value={contactInfo.email}
+            onChange={handleChange}
           />
         </div>
         <div>
@@ -46,6 +48,7 @@ function ContactForm() {
             name='phonenumber'
             placeholder='Phone Number'
             value={contactInfo.phonenumber}
+            onChange={handleChange}
           />
         </div>
         <div>
