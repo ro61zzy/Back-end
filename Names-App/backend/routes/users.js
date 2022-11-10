@@ -1,9 +1,17 @@
-var express = require('express');
-var router = express.Router();
+var express = require('express')
+var router = express.Router()
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+router.post('/details', function (req, res, next) {
+  const details = new Details({
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
+    email: req.body.email,
+    phonenumber: req.body.phonenumber,
+    location: req.body.location,
+  })
 
-module.exports = router;
+  details.save()
+})
+
+module.exports = router

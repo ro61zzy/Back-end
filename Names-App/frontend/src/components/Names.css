@@ -1,0 +1,12 @@
+* {
+  background-color: rgb(145, 184, 210);
+}
+.orig {
+  padding: 100px;
+}
+.fom {
+  text-align: center;
+  padding: 4rem;
+  margin: auto;
+  border: 2px solid;
+}
