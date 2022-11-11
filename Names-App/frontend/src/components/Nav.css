@@ -1,0 +1,59 @@
+.nav {
+  position: absolute;
+  width: 1440px;
+  height: 176px;
+  left: 0px;
+  top: 0px;
+  /*background: #de8911;*/
+}
+.scooby {
+  position: absolute;
+width: 369px;
+height: 67px;
+left: 65px;
+top: 20px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+color: #000000;
+}
+.view{
+  position: absolute;
+width: 93px;
+height: 48px;
+left: 880px;
+top: 100px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+color: #000000;
+}
+
+.line{
+  position: absolute;
+width: 1300px;
+height: 0px;
+left: 161px;
+top: 150px;
+border: 1px solid #000000;
+}
+.btn{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 1147px;
+  top: 28px;
+  border: 1px solid #80591f;
+  margin: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+    color: #80591f;
+    border-radius: 50px;
+}

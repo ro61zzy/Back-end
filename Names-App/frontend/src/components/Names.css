@@ -1,13 +1,19 @@
-* {
-  background-color: rgb(145, 184, 210);
+.page {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  /*background: #fbf5ee;*/
+  top: 0;
+  left: 0;
+  /* overflow: hidden; */
 }
 .side {
   position: absolute;
-  width: 553px;
-  height: 645px;
-  left: 120px;
+  width: 500px;
+  height: 550px;
+  left: 125px;
   top: 219px;
-  background: url('../img2.png');
   border-radius: 91px;
 }
 h1 {
@@ -15,13 +21,12 @@ h1 {
   width: 220px;
   height: 42px;
   left: 908px;
-  top: 219px;
+  top: 180px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 42px;
-
   color: #000000;
 }
 .form {
@@ -29,25 +34,30 @@ h1 {
   width: 585px;
   height: 672px;
   left: 710px;
-  top: 181px;
-
-  background: #c8a97c;
+  top: 192px;
+  padding-top: 20px;
+  background: #b1884ba2;
   border-radius: 50px;
 }
 .inputfield {
-  position: absolute;
+  position: relative;
   width: 405px;
   height: 61px;
-  left: 800px;
-  top: 286px;
-  background: #d9d9d9;
+  left: 10px;
+  padding: 4px;
+  top: 30px;
+  border-radius: 50px;
+  margin-top: 29px;
+  background: #d9d9d97f;
 }
 .button {
   position: absolute;
   width: 256px;
   height: 56px;
-  left: 949px;
-  top: 749px;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  bottom: 40px;
   background: #d9d9d9;
   border-radius: 50px;
 }
