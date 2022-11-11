@@ -1,12 +1,53 @@
 * {
   background-color: rgb(145, 184, 210);
 }
-.orig {
-  padding: 100px;
+.side {
+  position: absolute;
+  width: 553px;
+  height: 645px;
+  left: 120px;
+  top: 219px;
+  background: url('../img2.png');
+  border-radius: 91px;
 }
-.fom {
-  text-align: center;
-  padding: 4rem;
-  margin: auto;
-  border: 2px solid;
+h1 {
+  position: absolute;
+  width: 220px;
+  height: 42px;
+  left: 908px;
+  top: 219px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+
+  color: #000000;
+}
+.form {
+  position: absolute;
+  width: 585px;
+  height: 672px;
+  left: 710px;
+  top: 181px;
+
+  background: #c8a97c;
+  border-radius: 50px;
+}
+.inputfield {
+  position: absolute;
+  width: 405px;
+  height: 61px;
+  left: 800px;
+  top: 286px;
+  background: #d9d9d9;
+}
+.button {
+  position: absolute;
+  width: 256px;
+  height: 56px;
+  left: 949px;
+  top: 749px;
+  background: #d9d9d9;
+  border-radius: 50px;
 }
